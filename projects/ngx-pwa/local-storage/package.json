@@ -1,10 +1,6 @@
 {
-  "name": "@ngx-pwa/local-storage",
+  "name": "@ngx-builders/pwa-local-storage",
   "version": "13.0.3",
-  "funding": {
-    "type": "github",
-    "url": "https://github.com/sponsors/cyrilletuzi"
-  },
   "description": "Efficient local storage module for Angular: simple API based on native localStorage API, but internally stored via the asynchronous IndexedDB API for performance, and wrapped in RxJS observables to be homogeneous with other Angular modules.",
   "author": "Cyrille Tuzi",
   "license": "MIT",
@@ -20,11 +16,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/cyrilletuzi/angular-async-local-storage.git"
+    "url": "https://github.com/santoshyadavdev/ngx-pwa-offline.git"
   },
-  "homepage": "https://github.com/cyrilletuzi/angular-async-local-storage",
+  "homepage": "https://github.com/santoshyadavdev/ngx-pwa-offline",
   "bugs": {
-    "url": "https://github.com/cyrilletuzi/angular-async-local-storage/issues"
+    "url": "https://github.com/santoshyadavdev/ngx-pwa-offline/issues"
   },
   "dependencies": {
     "tslib": "^2.3.0"

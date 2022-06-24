@@ -59,7 +59,7 @@ export class StorageMap {
    * only after a first read or write operation.
    * @returns Storage engine used
    *
-   * @see {@link https://github.com/cyrilletuzi/angular-async-local-storage/blob/main/docs/INTEROPERABILITY.md}
+   * @see {@link https://github.com/santoshyadavdev/ngx-pwa-offline/blob/main/docs/INTEROPERABILITY.md}
    *
    * @example
    * if (this.storageMap.backingEngine === 'indexedDB') {}
@@ -92,7 +92,7 @@ export class StorageMap {
    * **Values will be empty if the storage is not `indexedDB`,**
    * **so it should be used after an engine check**.
    *
-   * @see {@link https://github.com/cyrilletuzi/angular-async-local-storage/blob/main/docs/INTEROPERABILITY.md}
+   * @see {@link https://github.com/santoshyadavdev/ngx-pwa-offline/blob/main/docs/INTEROPERABILITY.md}
    *
    * @example
    * if (this.storageMap.backingEngine === 'indexedDB') {
@@ -113,7 +113,7 @@ export class StorageMap {
    * **Values will be empty if the storage is not `localStorage`,**
    * **so it should be used after an engine check**.
    *
-   * @see {@link https://github.com/cyrilletuzi/angular-async-local-storage/blob/main/docs/INTEROPERABILITY.md}
+   * @see {@link https://github.com/santoshyadavdev/ngx-pwa-offline/blob/main/docs/INTEROPERABILITY.md}
    *
    * @example
    * if (this.storageMap.backingEngine === 'localStorage') {
@@ -131,7 +131,7 @@ export class StorageMap {
   /**
    * Get an item value in storage.
    * The signature has many overloads due to validation, **please refer to the documentation.**
-   * @see {@link https://github.com/cyrilletuzi/angular-async-local-storage/blob/main/docs/VALIDATION.md}
+   * @see {@link https://github.com/santoshyadavdev/ngx-pwa-offline/blob/main/docs/VALIDATION.md}
    * @param key The item's key
    * @param schema Optional JSON schema to validate the data
    * @returns The item's value if the key exists, `undefined` otherwise, wrapped in a RxJS `Observable`
@@ -318,7 +318,7 @@ export class StorageMap {
    * Watch an item value in storage.
    * **Note only changes done via this lib will be watched**, external changes in storage can't be detected.
    * The signature has many overloads due to validation, **please refer to the documentation.**
-   * @see https://github.com/cyrilletuzi/angular-async-local-storage/blob/main/docs/VALIDATION.md
+   * @see https://github.com/santoshyadavdev/ngx-pwa-offline/blob/main/docs/VALIDATION.md
    * @param key The item's key to watch
    * @param schema Optional JSON schema to validate the initial value
    * @returns An infinite `Observable` giving the current value
@@ -387,7 +387,7 @@ export class StorageMap {
 
         /* When storage is fully disabled in browser (via the "Block all cookies" option),
          * just trying to check `localStorage` variable causes a security exception.
-         * Prevents https://github.com/cyrilletuzi/angular-async-local-storage/issues/118
+         * Prevents https://github.com/santoshyadavdev/ngx-pwa-offline/issues/118
          */
         try {
 

@@ -1,11 +1,11 @@
 {
-  "name": "@ngx-pwa/local-storage",
-  "version": "13.0.3",
+  "name": "@ngx-builders/pwa-local-storage",
+  "version": "13.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve demo",
     "start:iframe": "ng serve iframe --port 8080",
-    "build": "ng build ngx-pwa-local-storage && copyfiles README.md LICENSE dist/ngx-pwa/local-storage && npm run schematics",
+    "build": "ng build ngx-pwa-local-storage -c=production && copyfiles README.md LICENSE dist/ngx-pwa/local-storage && npm run schematics",
     "test": "npm run unit && npm run e2e",
     "unit": "ng test ngx-pwa-local-storage --watch false",
     "unit:macOS-latest": "ng test ngx-pwa-local-storage --watch false --browsers SafariNative",

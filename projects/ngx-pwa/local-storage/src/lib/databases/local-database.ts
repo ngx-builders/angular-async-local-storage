@@ -13,7 +13,7 @@ import { MemoryDatabase } from './memory-database';
  * @param LSPrefix Prefix for `localStorage` keys to avoid collision for multiple apps on the same subdomain
  * @param IDBDBName `indexedDB` database name
  * @param IDBstoreName `indexedDB` storeName name
- * @see {@link https://github.com/cyrilletuzi/angular-async-local-storage/blob/main/docs/BROWSERS_SUPPORT.md}
+ * @see {@link https://github.com/santoshyadavdev/ngx-pwa-offline/blob/main/docs/BROWSERS_SUPPORT.md}
  */
 export function localDatabaseFactory(
   platformId: string, LSPrefix: string, IDBDBName: string, IDBStoreName: string,
@@ -21,7 +21,7 @@ export function localDatabaseFactory(
 
   /* When storage is fully disabled in browser (via the "Block all cookies" option),
    * just trying to check `indexedDB` or `localStorage` variables causes a security exception.
-   * Prevents https://github.com/cyrilletuzi/angular-async-local-storage/issues/118
+   * Prevents https://github.com/santoshyadavdev/ngx-pwa-offline/issues/118
    */
   try {
 
@@ -46,7 +46,7 @@ export function localDatabaseFactory(
       * - it could exists but not having a working API
       * Will be the case for:
       * - Safari cross-origin iframes, detected later in `IndexedDBDatabase.connect()`
-      * @see {@link https://github.com/cyrilletuzi/angular-async-local-storage/issues/42}
+      * @see {@link https://github.com/santoshyadavdev/ngx-pwa-offline/issues/42}
       * - Firefox private mode, but in this case, data will be swiped when the user leaves the app
       * For Firefox, can only be detected later in `IndexedDBDatabase.connect()`
       * @see {@link https://bugzilla.mozilla.org/show_bug.cgi?id=781982}

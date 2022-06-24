@@ -16,14 +16,14 @@ Given my current professional situation and the lack of support for my open sour
 # Checks before posting an issue
 
 - [ ] I have read _all_ the library's documentation:
-  - [README](https://github.com/cyrilletuzi/angular-async-local-storage/blob/main/README.md)
-  - [CHANGELOG](https://github.com/cyrilletuzi/angular-async-local-storage/blob/main/CHANGELOG.md)
-  - [MIGRATION](https://github.com/cyrilletuzi/angular-async-local-storage/blob/main/MIGRATION.md)
-  - [/docs](https://github.com/cyrilletuzi/angular-async-local-storage/tree/main/docs)
+  - [README](https://github.com/santoshyadavdev/ngx-pwa-offline/blob/main/README.md)
+  - [CHANGELOG](https://github.com/santoshyadavdev/ngx-pwa-offline/blob/main/CHANGELOG.md)
+  - [MIGRATION](https://github.com/santoshyadavdev/ngx-pwa-offline/blob/main/MIGRATION.md)
+  - [/docs](https://github.com/santoshyadavdev/ngx-pwa-offline/tree/main/docs)
 - [ ] I have checked in already:
-  - [opened issues](https://github.com/cyrilletuzi/angular-async-local-storage/issues)
-  - [closed issues](https://github.com/cyrilletuzi/angular-async-local-storage/issues?q=is%3Aissue+is%3Aclosed)
-  - [questions answered](https://github.com/cyrilletuzi/angular-async-local-storage/discussions/categories/q-a) in the new "Discussions" tab
+  - [opened issues](https://github.com/santoshyadavdev/ngx-pwa-offline/issues)
+  - [closed issues](https://github.com/santoshyadavdev/ngx-pwa-offline/issues?q=is%3Aissue+is%3Aclosed)
+  - [questions answered](https://github.com/santoshyadavdev/ngx-pwa-offline/discussions/categories/q-a) in the new "Discussions" tab
 - [ ] I understand I am writing to a *human being*, doing this open source project *unpaid*
 - [ ] I will be involved in my own issue, by answering questions and informing if the issue is resolved
 

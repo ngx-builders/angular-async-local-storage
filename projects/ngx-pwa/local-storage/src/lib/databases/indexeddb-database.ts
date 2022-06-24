@@ -263,7 +263,7 @@ export class IndexedDBDatabase implements LocalDatabase {
         const { store } = transactionData;
 
         /* Open a cursor on the store
-         * Avoid issues like https://github.com/cyrilletuzi/angular-async-local-storage/issues/69 */
+         * Avoid issues like https://github.com/santoshyadavdev/ngx-pwa-offline/issues/69 */
         const request = store.openKeyCursor();
 
         /* Listen to success event */
@@ -301,7 +301,7 @@ export class IndexedDBDatabase implements LocalDatabase {
         const { store, events } = transactionData;
 
         /* Check if the key exists in the store
-         * Fixes https://github.com/cyrilletuzi/angular-async-local-storage/issues/69
+         * Fixes https://github.com/santoshyadavdev/ngx-pwa-offline/issues/69
          */
         const request = store.getKey(key);
 
@@ -324,7 +324,7 @@ export class IndexedDBDatabase implements LocalDatabase {
 
     /* Connect to `indexedDB`
      * Will fail in Safari cross-origin iframes
-     * @see {@link https://github.com/cyrilletuzi/angular-async-local-storage/issues/42} */
+     * @see {@link https://github.com/santoshyadavdev/ngx-pwa-offline/issues/42} */
     try {
 
       /* Do NOT explicit `window` here, as `indexedDB` could be used from a web worker too */
@@ -357,7 +357,7 @@ export class IndexedDBDatabase implements LocalDatabase {
         error: () => {
           /* Firefox private mode issue: fallback storage if IndexedDb connection is failing
           * @see {@link https://bugzilla.mozilla.org/show_bug.cgi?id=781982}
-          * @see {@link https://github.com/cyrilletuzi/angular-async-local-storage/issues/26} */
+          * @see {@link https://github.com/santoshyadavdev/ngx-pwa-offline/issues/26} */
           this.database.error(new IDBBrokenError());
         },
       });
