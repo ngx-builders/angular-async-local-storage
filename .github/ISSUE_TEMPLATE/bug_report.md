@@ -31,7 +31,7 @@ Given my current professional situation and the lack of support for my open sour
 
 # Configuration
 
-- `@ngx-pwa/local-storage` version: 
+- `@ngx-builders/pwa-local-storage` version: 
 - Angular version (`ng version`):
 ```
 Copy the result here

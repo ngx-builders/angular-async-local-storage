@@ -6,14 +6,6 @@ It also works in tools based on browser engines (like Electron, WebViews, Ionic.
 but not in non-browser tools (like NativeScript, see
 [#11](https://github.com/santoshyadavdev/ngx-pwa-offline/issues/11)).
 
-## Internet Explorer
-
-Following Angular itself:
-- versions <= 10: IE9+
-- version 11: IE11 only
-- version 12: IE11 support deprecated (but still active)
-- versions >= 13: IE11 support removed
-
 This module is not impacted by IE missing `indexedDB` features.
 
 ## Browsers restrictions

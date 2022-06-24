@@ -6,7 +6,7 @@ If you are already using the lib, use the [migrations guides](../MIGRATION.md).
 **You should install this library with this command:**
 
 ```bash
-ng add @ngx-pwa/local-storage
+ng add @ngx-builders/pwa-local-storage
 ```
 
 If it causes an error, please file an issue.
@@ -19,16 +19,7 @@ Install the right version according to your Angular one via [`npm`](http://npmjs
 
 ```bash
 # For Angular 13:
-npm install @ngx-pwa/local-storage@13
-
-# For Angular 12:
-npm install @ngx-pwa/local-storage@12
-
-# For Angular 11:
-npm install @ngx-pwa/local-storage@11
-
-# For Angular 10:
-npm install @ngx-pwa/local-storage@10
+npm install @ngx-builders/pwa-local-storage
 ```
 
 [Back to general documentation](../README.md)

@@ -12,13 +12,6 @@ Efficient client-side storage module for Angular:
 
 Given my current professional situation and the lack of support for my open source work, this library is in a frozen state, meaning it is still available on npm but it will no longer get features updates or support.
 
-## How to help?
-
-My open source work represents *months* of full time *unpaid* work, with for example the [Angular schematics extension for VS Code](https://marketplace.visualstudio.com/items?itemName=cyrilletuzi.angular-schematics),
-**used by 600 000 developers**.
-
-So if you want to help, I released **[Schematics Pro](https://www.schematicspro.dev)**, a paid code automation tool for Angular, React, Vue, Ionic, Svelte, Stencil, Lit, Nest and more.
-
 ## Why this module?
 
 For now, Angular does not provide a client-side storage module, and almost every app needs some client-side storage. 
@@ -47,7 +40,7 @@ Install the package, according to your Angular version:
 
 ```bash
 # For Angular LTS (Angular >= 12):
-ng add @ngx-pwa/local-storage
+ng add @ngx-builders/pwa-local-storage
 ```
 
 *Done!*
@@ -58,7 +51,7 @@ as there are additionnal steps to do in addition to the package installation for
 
 If you have multiple applications in the same project, as usual, you need to choose the project:
 ```bash
-ng add @ngx-pwa/local-storage --project yourprojectname
+ng add @ngx-builders/pwa-local-storage --project yourprojectname
 ```
 
 ### Upgrading
@@ -68,7 +61,7 @@ To update to new versions, see the **[migration guides](https://github.com/santo
 ## API
 
 ```typescript
-import { StorageMap } from '@ngx-pwa/local-storage';
+import { StorageMap } from '@ngx-builders/pwa-local-storage';
 
 @Injectable()
 export class YourService {

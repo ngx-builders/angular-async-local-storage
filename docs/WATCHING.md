@@ -16,7 +16,7 @@ It *cannot* detect external changes (for examples via the native `indexedDB` API
 
 ```typescript
 import { Subscription } from 'rxjs';
-import { StorageMap } from '@ngx-pwa/local-storage';
+import { StorageMap } from '@ngx-builders/pwa-local-storage';
 
 @Component({
   template: `<p>{{data}}<p>`
@@ -46,7 +46,7 @@ export class SomeComponent implements OnInit, OnDestroy {
 
 ```typescript
 import { Observable } from 'rxjs';
-import { StorageMap } from '@ngx-pwa/local-storage';
+import { StorageMap } from '@ngx-builders/pwa-local-storage';
 
 @Component({
   template: `<p>{{data$ | async}}<p>`
@@ -69,7 +69,7 @@ If you need the data in several places:
 
 ```typescript
 import { Observable } from 'rjxs';
-import { StorageMap, JSONSchema } from '@ngx-pwa/local-storage';
+import { StorageMap, JSONSchema } from '@ngx-builders/pwa-local-storage';
 
 interface Data {
   hello: string;

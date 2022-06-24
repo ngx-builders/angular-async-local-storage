@@ -6,7 +6,7 @@ this lib also provides a partial `Map`-like API for advanced operations.
 To use it:
 
 ```typescript
-import { StorageMap } from '@ngx-pwa/local-storage';
+import { StorageMap } from '@ngx-builders/pwa-local-storage';
 
 export class AngularComponentOrService {
 
