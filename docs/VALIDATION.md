@@ -101,7 +101,7 @@ must be exactly the same, otherwise the validation fails.
 
 For example:
 ```typescript
-import { JSONSchema } from '@ngx-pwa/local-storage';
+import { JSONSchema } from '@ngx-builders/pwa-local-storage';
 
 interface User {
   firstName: string;
@@ -228,7 +228,7 @@ this.storage.get('test', {
 ## How to validate nested types
 
 ```typescript
-import { JSONSchema } from '@ngx-pwa/local-storage';
+import { JSONSchema } from '@ngx-builders/pwa-local-storage';
 
 interface User {
   firstName: string;

@@ -395,10 +395,12 @@
       }
     }
   },
-  "defaultProject": "ngx-pwa-local-storage",
   "schematics": {
     "@schematics/angular:component": {
       "inlineTemplate": true
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

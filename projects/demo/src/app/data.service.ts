@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { mergeMap } from 'rxjs/operators';
-import { StorageMap } from '@ngx-pwa/local-storage';
+import { StorageMap } from '@ngx-builders/pwa-local-storage';
 
 @Injectable({
   providedIn: 'root'

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { catchError, mergeMap, toArray } from 'rxjs/operators';
-import { LocalStorage, StorageMap, JSONSchema } from '@ngx-pwa/local-storage';
+import { LocalStorage, StorageMap, JSONSchema } from '@ngx-builders/pwa-local-storage';
 
 import { DataService } from './data.service';
 

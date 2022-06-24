@@ -2,7 +2,7 @@ import { Tree, SchematicsException } from '@angular-devkit/schematics';
 import { getPackageJsonDependency } from '@schematics/angular/utility/dependencies';
 import { getWorkspace } from '@schematics/angular/utility/workspace';
 
-export const packageName = '@ngx-pwa/local-storage';
+export const packageName = '@ngx-builders/pwa-local-storage';
 
 export function getDependencyMajorVersion(name: string, host: Tree): number | undefined {
 

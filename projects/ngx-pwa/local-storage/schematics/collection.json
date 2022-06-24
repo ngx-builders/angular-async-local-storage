@@ -2,7 +2,7 @@
   "$schema": "../../../../node_modules/@angular-devkit/schematics/collection-schema.json",
   "schematics": {
     "ng-add": {
-      "description": "Add @ngx-pwa/local-storage library to the project.",
+      "description": "Add @ngx-builders/pwa-local-storage library to the project.",
       "factory": "./ng-add/index",
       "schema": "./ng-add/schema.json"
     }

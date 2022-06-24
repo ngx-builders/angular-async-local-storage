@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { StorageMap, JSONSchema } from '@ngx-pwa/local-storage';
+import { StorageMap, JSONSchema } from '@ngx-builders/pwa-local-storage';
 import { switchMap } from 'rxjs/operators';
 
 interface Data {

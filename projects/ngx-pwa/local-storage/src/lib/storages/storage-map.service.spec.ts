@@ -1290,8 +1290,8 @@ function tests(description: string, localStorageServiceFactory: () => StorageMap
 
     });
 
-    /* Avoid https://github.com/cyrilletuzi/angular-async-local-storage/issues/25
-     * Avoid https://github.com/cyrilletuzi/angular-async-local-storage/issues/5 */
+    /* Avoid https://github.com/santoshyadavdev/ngx-pwa-offline/issues/25
+     * Avoid https://github.com/santoshyadavdev/ngx-pwa-offline/issues/5 */
     describe('complete', () => {
 
       const schema: JSONSchema = { type: 'string' };
@@ -1427,7 +1427,7 @@ describe('StorageMap', () => {
 
   describe('browser APIs', () => {
 
-    /* Avoid https://github.com/cyrilletuzi/angular-async-local-storage/issues/57 */
+    /* Avoid https://github.com/santoshyadavdev/ngx-pwa-offline/issues/57 */
     it('IndexedDb is used (will be pending in Firefox private mode)', (done) => {
 
       const index = `test${Date.now()}`;
@@ -1513,7 +1513,7 @@ describe('StorageMap', () => {
 
     });
 
-    /* Avoid https://github.com/cyrilletuzi/angular-async-local-storage/issues/57 */
+    /* Avoid https://github.com/santoshyadavdev/ngx-pwa-offline/issues/57 */
     it('indexedDb with noWrap to false (will be pending in Firefox private mode)', (done) => {
 
       const index = `wrap${Date.now()}`;

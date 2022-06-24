@@ -10,7 +10,7 @@ you need to add a prefix.
 For example:
 
 ```typescript
-import { StorageModule } from '@ngx-pwa/local-storage';
+import { StorageModule } from '@ngx-builders/pwa-local-storage';
 
 @NgModule({
   imports: [

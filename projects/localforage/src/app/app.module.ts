@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { StorageModule } from '@ngx-pwa/local-storage';
+import { StorageModule } from '@ngx-builders/pwa-local-storage';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';

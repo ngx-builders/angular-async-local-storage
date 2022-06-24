@@ -21,7 +21,7 @@ If you started using this lib since version >= 9, you're good to go.
 If you started using this lib before version 9, you need to check your `AppModule`:
 
 ```ts
-import { StorageModule } from '@ngx-pwa/local-storage';
+import { StorageModule } from '@ngx-builders/pwa-local-storage';
 
 @NgModule({
   imports: [
@@ -48,7 +48,7 @@ so you will need that all APIs use the same names.
 - Option 1 (recommended): change this lib config, according to your other APIs:
 
 ```ts
-import { StorageModule } from '@ngx-pwa/local-storage';
+import { StorageModule } from '@ngx-builders/pwa-local-storage';
 
 @NgModule({
   imports: [
@@ -87,7 +87,7 @@ but you can add a prefix.
 - Option 1 (recommended):
 
 ```typescript
-import { StorageModule } from '@ngx-pwa/local-storage';
+import { StorageModule } from '@ngx-builders/pwa-local-storage';
 
 @NgModule({
   imports: [
@@ -113,7 +113,7 @@ if (this.storage.backingEngine === 'localStorage') {
 Interoperability with `localforage` lib can be achieved with this config:
 
 ```typescript
-import { StorageModule } from '@ngx-pwa/local-storage';
+import { StorageModule } from '@ngx-builders/pwa-local-storage';
 
 @NgModule({
   imports: [

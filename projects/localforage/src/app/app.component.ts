@@ -1,6 +1,6 @@
 import * as localForage from 'localforage';
 import { Component, OnInit } from '@angular/core';
-import { StorageMap } from '@ngx-pwa/local-storage';
+import { StorageMap } from '@ngx-builders/pwa-local-storage';
 
 @Component({
   selector: 'app-root',
