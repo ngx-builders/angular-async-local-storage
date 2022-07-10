@@ -8,10 +8,6 @@ Efficient client-side storage module for Angular:
 - **compatibility**: works around some browsers issues and heavily tested via GitHub Actions,
 - **documentation**: API fully explained, and a changelog!
 
-## Status of this lib
-
-Given my current professional situation and the lack of support for my open source work, this library is in a frozen state, meaning it is still available on npm but it will no longer get features updates or support.
-
 ## Why this module?
 
 For now, Angular does not provide a client-side storage module, and almost every app needs some client-side storage. 
@@ -46,17 +42,13 @@ ng add @ngx-builders/pwa-local-storage
 *Done!*
 
 You should **stick to these commands**. If for any reason `ng add` does not work,
-be sure to follow the [manual installation guide](https://github.com/santoshyadavdev/ngx-pwa-offline/blob/main/docs/MANUAL_INSTALLATION.md),
+be sure to follow the [manual installation guide](https://github.com/ngx-builders/angular-async-local-storage/blob/main/docs/MANUAL_INSTALLATION.md),
 as there are additionnal steps to do in addition to the package installation for some versions.
 
 If you have multiple applications in the same project, as usual, you need to choose the project:
 ```bash
 ng add @ngx-builders/pwa-local-storage --project yourprojectname
 ```
-
-### Upgrading
-
-To update to new versions, see the **[migration guides](https://github.com/santoshyadavdev/ngx-pwa-offline/blob/main/MIGRATION.md).**
 
 ## API
 
@@ -114,7 +106,7 @@ You can store any value, without worrying about serializing. But note that:
 - storing `null` or `undefined` makes no sense and can cause issues in some browsers, so the item will be removed instead,
 - you should stick to JSON data, ie. primitive types, arrays and *literal* objects.
 `Date`, `Map`, `Set`, `Blob` and other special structures can cause issues in some scenarios.
-See the [serialization guide](https://github.com/santoshyadavdev/ngx-pwa-offline/blob/main/docs/SERIALIZATION.md) for more details.
+See the [serialization guide](https://github.com/ngx-builders/angular-async-local-storage/blob/main/docs/SERIALIZATION.md) for more details.
 
 ### Deleting data
 
@@ -146,7 +138,7 @@ this.storage.get('notexisting').subscribe((data) => {
 
 **Note you will only get *one* value**: the `Observable` is here for asynchrony but
 **is *not* meant to emit again when the stored data is changed**.
-If you need to watch the value, see the [watching guide](https://github.com/santoshyadavdev/ngx-pwa-offline/blob/main/docs/WATCHING.md).
+If you need to watch the value, see the [watching guide](https://github.com/ngx-builders/angular-async-local-storage/blob/main/docs/WATCHING.md).
 
 ### Checking data
 
@@ -161,7 +153,7 @@ this.storage.get('test', { type: 'string' }).subscribe({
 });
 ```
 
-**See the [full validation guide](https://github.com/santoshyadavdev/ngx-pwa-offline/blob/main/docs/VALIDATION.md) to see how to validate all common scenarios.**
+**See the [full validation guide](https://github.com/ngx-builders/angular-async-local-storage/blob/main/docs/VALIDATION.md) to see how to validate all common scenarios.**
 
 ### Subscription
 
@@ -190,14 +182,14 @@ this.storage.get('color').pipe(
 ).subscribe((result) => {});
 ```
 
-See the [errors guide](https://github.com/santoshyadavdev/ngx-pwa-offline/blob/main/docs/ERRORS.md) for some details about what errors can happen.
+See the [errors guide](https://github.com/ngx-builders/angular-async-local-storage/blob/main/docs/ERRORS.md) for some details about what errors can happen.
 
 ### Expiration
 
 This lib, as native `localStorage` and `indexedDb`, is about *persistent* storage.
 
 Wanting *temporary* storage (like `sessionStorage`) is a very common misconception:
-an application doesn't need that. [More details here](https://github.com/santoshyadavdev/ngx-pwa-offline/blob/main/docs/EXPIRATION.md).
+an application doesn't need that. [More details here](https://github.com/ngx-builders/angular-async-local-storage/blob/main/docs/EXPIRATION.md).
 
 ### `Map`-like operations
 
@@ -207,7 +199,7 @@ this lib also provides a `Map`-like API for advanced operations:
   - `.has(key)`
   - `.size`
 
-See the [documentation](https://github.com/santoshyadavdev/ngx-pwa-offline/blob/main/docs/MAP_OPERATIONS.md) for more info and some recipes.
+See the [documentation](https://github.com/ngx-builders/angular-async-local-storage/blob/main/docs/MAP_OPERATIONS.md) for more info and some recipes.
 For example, it allows to implement a multiple databases scenario.
 
 ## Support
@@ -215,22 +207,18 @@ For example, it allows to implement a multiple databases scenario.
 ### Browser support
 
 This lib supports [the same browsers as Angular](https://angular.io/guide/browser-support).
-See [the browsers support guide](https://github.com/santoshyadavdev/ngx-pwa-offline/blob/main/docs/BROWSERS_SUPPORT.md) for more details and special cases (like private browsing).
+See [the browsers support guide](https://github.com/ngx-builders/angular-async-local-storage/blob/main/docs/BROWSERS_SUPPORT.md) for more details and special cases (like private browsing).
 
 ### Collision
 
 If you have multiple apps on the same *sub*domain *and* you don't want to share data between them,
-see the [prefix guide](https://github.com/santoshyadavdev/ngx-pwa-offline/blob/main/docs/COLLISION.md).
+see the [prefix guide](https://github.com/ngx-builders/angular-async-local-storage/blob/main/docs/COLLISION.md).
 
 ### Interoperability
 
 For interoperability when mixing this lib with direct usage of native APIs or other libs like `localForage`
 (which doesn't make sense in most cases),
-see the [interoperability documentation](https://github.com/santoshyadavdev/ngx-pwa-offline/blob/main/docs/INTEROPERABILITY.md).
-
-### Changelog
-
-[Changelog available here](https://github.com/santoshyadavdev/ngx-pwa-offline/blob/main/CHANGELOG.md), and [migration guides here](https://github.com/santoshyadavdev/ngx-pwa-offline/blob/main/MIGRATION.md).
+see the [interoperability documentation](https://github.com/ngx-builders/angular-async-local-storage/blob/main/docs/INTEROPERABILITY.md).
 
 ## License
 
