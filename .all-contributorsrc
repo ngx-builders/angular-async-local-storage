@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "Omkar0114",
+      "name": "Omkar kulkarni",
+      "avatar_url": "https://avatars.githubusercontent.com/u/88308267?v=4",
+      "profile": "http://omkark.bio.link",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "angular-async-local-storage",
+  "projectOwner": "ngx-builders",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
